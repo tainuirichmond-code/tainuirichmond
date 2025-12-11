@@ -1,101 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tainui Richmond</title>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #000;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-
-        .header {
-            text-align: center;
-            padding: 40px 0 10px;
-        }
-
-        .header img {
-            width: 300px;
-            max-width: 90%;
-        }
-
-        .content-box {
-            width: 600px;
-            max-width: 95%;
-            background: white;
-            margin: 0 auto;
-            padding: 0;
-            position: relative;
-        }
-
-        .main-image {
-            width: 100%;
-            display: block;
-        }
-
-        /* Positioning the text links */
-        .nav-link {
-            position: absolute;
-            font-size: 22px;
-            font-style: italic;
-            color: #555;
-            text-decoration: none;
-        }
-
-        .about { top: 20%; left: 10%; }
-        .gigs { top: 20%; right: 10%; }
-        .merch { bottom: 20%; left: 10%; }
-        .contact { bottom: 20%; right: 10%; }
-
-        /* Social icons area */
-        .socials {
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        .socials img {
-            width: 32px;
-            margin: 0 8px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tainui Richmond</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="page-bg">
+    <header class="site-header">
+      <!-- swap logo.png with your handwritten logo. If you don't have one, the text fallback will show -->
+      <img src="images/logo.png" alt="tainui richmond" class="logo" onerror="this.style.display='none'">
+      <div class="logo-text">tainui richmond</div>
+    </header>
 
-    <!-- Handwritten title -->
-    <div class="header">
-        <img src="header-logo.png" alt="Tainui Richmond">
-    </div>
+    <main class="frame">
+      <div class="panel">
+        <div class="nav-label nav-about"><a href="about.html">About</a></div>
+        <div class="nav-label nav-gigs"><a href="gigs.html">Gigs</a></div>
+        <img src="images/hero.jpg" alt="hero" class="hero" />
+        <div class="nav-label nav-merch"><a href="merch.html">Merch</a></div>
+        <div class="nav-label nav-contact"><a href="contact.html">Contact</a></div>
+      </div>
 
-    <!-- White box containing main layout -->
-    <div class="content-box">
+      <div class="social-row">
+        <!-- Replace href="#" with your real social URLs -->
+        <a href="#" target="_blank" aria-label="YouTube" class="social">
+          <!-- YouTube SVG -->
+          <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.12-2.12C19.7 3.6 12 3.6 12 3.6s-7.7 0-9.38.48A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.12 2.12C4.3 20.4 12 20.4 12 20.4s7.7 0 9.38-.48a3 3 0 002.12-2.12A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+        </a>
 
-        <!-- Main image -->
-        <img src="main-image.jpg" alt="Beach photo" class="main-image">
+        <a href="#" target="_blank" aria-label="Facebook" class="social">
+          <!-- Facebook SVG -->
+          <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.9v-7H8.9v-2.9h1.6V9.3c0-1.6.95-2.5 2.4-2.5.7 0 1.4.1 1.4.1v1.6h-.8c-.8 0-1 .5-1 1v1.1h1.7l-.3 2.8h-1.5v7A10 10 0 0022 12z"/></svg>
+        </a>
 
-        <!-- Text links -->
-        <a href="about.html" class="nav-link about">About</a>
-        <a href="gigs.html" class="nav-link gigs">Gigs</a>
-        <a href="merch.html" class="nav-link merch">Merch</a>
-        <a href="contact.html" class="nav-link contact">Contact</a>
+        <a href="#" target="_blank" aria-label="Instagram" class="social">
+          <!-- Instagram SVG -->
+          <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.2A4.8 4.8 0 1016.8 13 4.8 4.8 0 0012 8.2zM18.4 6a1.2 1.2 0 11-1.2-1.2A1.2 1.2 0 0118.4 6z"/></svg>
+        </a>
 
-    </div>
+        <a href="#" target="_blank" aria-label="Spotify" class="social">
+          <!-- Spotify SVG -->
+          <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm4.9 14.4a.8.8 0 01-1.1.3c-2.9-1.8-6.6-2.2-10-1a.8.8 0 11-.5-1.5c3.8-1.4 7.7-1 10.9 1.2a.8.8 0 01.3 1.1zM17 11.3a.8.8 0 01-1 .4c-3.3-1.9-8.7-2.1-11.8-1a.8.8 0 01-.5-1.5c3.7-1.2 9.6-.9 13.4 1.1a.8.8 0 01.4 1z"/></svg>
+        </a>
 
-    <!-- Social icons -->
-    <div class="socials">
-        <a href="#"><img src="youtube.png" alt="YouTube"></a>
-        <a href="#"><img src="facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="instagram.png" alt="Instagram"></a>
-        <a href="#"><img src="tiktok.png" alt="TikTok"></a>
-        <a href="#"><img src="spotify.png" alt="Spotify"></a>
-        <a href="#"><img src="applemusic.png" alt="Apple Music"></a>
-    </div>
+        <a href="#" target="_blank" aria-label="Apple Music" class="social">
+          <!-- Music note (apple music-ish) -->
+          <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M12 3v10.5A3.5 3.5 0 109 17V7l3-4z"/></svg>
+        </a>
+      </div>
+    </main>
+  </div>
 
+  <!-- small script: if you open the file locally and logo.png missing, it hides fallback -->
+  <script>
+    // nothing needed - page is static
+  </script>
 </body>
 </html>
